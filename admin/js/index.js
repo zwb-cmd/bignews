@@ -5,7 +5,8 @@ $(function () {
         headers: {
             'Authorization': localStorage.getItem('token')
         },
-        url: 'http://localhost:8080/api/v1/admin/user/info',
+        // url: 'http://localhost:8080/api/v1/admin/user/info',
+        url: BigNew.user_info,
         success: function (res) {
             console.log(res)
             if (res.code == 200) {

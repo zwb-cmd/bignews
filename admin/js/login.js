@@ -5,6 +5,7 @@ $(function () {
         $.ajax({
             type: 'post',
             url: 'http://localhost:8080/api/v1/admin/user/login',
+            url: BigNew.user_login,
             data: $(this).serialize(),
             beforeSend: function () {
                 //判断输入不能为空
