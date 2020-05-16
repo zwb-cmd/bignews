@@ -28,7 +28,8 @@ $(function () {
                 if (res.code == 200) {
                     //登陆成功
                     $('.modal').on('hidden.bs.modal', function (e) {
-                        window.location.href = './index.html'
+                        window.location.href = './index.html';
+                        localStorage.setItem('token', res.token)
                     })
                 }
             }
